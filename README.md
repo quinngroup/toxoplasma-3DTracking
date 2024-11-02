@@ -1,6 +1,6 @@
-# 🧬 Toxoplasma 3D Tracking Project
+# 🧬 Toxoplasma 2D and 3D Tracking Project
 
-This repository contains Python scripts and Jupyter Notebooks for tracking **Toxoplasma** in 2D and 3D using various implementations. The project features serial, parallel, and distributed versions, showcasing the flexibility and scalability of the tracking algorithms.
+This repository contains Python scripts and Jupyter Notebooks for tracking **Toxoplasma** in 2D and 3D using various implementations. The project features serial, parallel, and distributed versions, showcasing the flexibility and scalability of the tracking algorithms. This work is part of our contribution to the **IEEE Big Data 2018** conference.
 
 ---
 
@@ -23,16 +23,29 @@ The repository is structured to provide different approaches for tracking Toxopl
 
 ---
 
-## 📄 Description of Implementations
+## 📄 Paper Details
 
-### 1. **Serial Version** (`3D_tracking_serial.py`)
-A straightforward implementation for running the tracking algorithm on a single machine, ideal for smaller datasets or initial testing.
+This project is based on the following publication:
 
-### 2. **Parallel Version** (`3D_tracking_parallel.py`, `Parallel_processing_python.ipynb`)
-Utilizes Python's multiprocessing capabilities and Joblib to parallelize the tracking process across multiple cores on a server.
+**Paper Title**: *Toward Simple & Scalable 3D Cell Tracking*  
+**Conference**: 2018 IEEE International Conference on Big Data (Big Data)  
+**IEEE Link**: [View on IEEE](https://ieeexplore.ieee.org/abstract/document/8622403)  
+**Pre-print Link**: [View on ResearchGate](https://www.researchgate.net/profile/Mojtaba-S-Fazli/publication/329718237_Toward_Simple_Scalable_3D_Cell_Tracking/links/5c1adea3a6fdccfc705ac96a/Toward-Simple-Scalable-3D-Cell-Tracking.pdf)
 
-### 3. **Distributed Version** (`3D_Tracking_detection_module.ipynb`, `3D_Tracking_module.ipynb`)
-Employs Dask to scale the computation across a cluster, making it suitable for processing large datasets efficiently.
+### Citation
+If you use this code or build upon it for your research, please cite our paper using the following format:
+
+```bibtex
+@INPROCEEDINGS{8622403,
+  author={M. S. Fazli, S. A. Vella, S. N. J. Moreno, G. E. Ward and S. P. Quinn},
+  booktitle={2018 IEEE International Conference on Big Data (Big Data)},
+  title={Toward Simple & Scalable 3D Cell Tracking},
+  year={2018},
+  pages={3217-3225},
+  doi={10.1109/BigData.2018.8622403},
+  keywords={Three-dimensional displays;Videos;Pipelines;Microscopy;Tracking;Two dimensional displays;Genetic algorithms;Cell Detection;Cell Tracking;3D video Tracking;3D Microscopic Videos;Large-Scale tracking method;Computer vision;Toxoplasma Gondii}
+}
+```
 
 ---
 
@@ -76,11 +89,6 @@ For the distributed version, additional Dask configurations may be needed for yo
 - **Cluster Configuration**: Adjust the Dask client and scheduler settings for optimal performance.
 - **Memory Management**: For large-scale data, tweak memory usage settings in Dask to prevent overflow.
 - **Parameter Adjustments**: Modify paths, cluster numbers, and other configurable parameters in the scripts/notebooks as per your data and requirements.
-
----
-
-## 📄 Paper and Citation
-For details on the methodology and results, please refer to our related publications. If you use this code in your research, please cite the corresponding papers.
 
 ---
 
