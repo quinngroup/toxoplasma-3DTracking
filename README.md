@@ -1,4 +1,4 @@
-# 🧬 Toxoplasma 2D and 3D Tracking Project
+# 🧬 Toxoplasma 3D Tracking Project
 
 This repository contains Python scripts and Jupyter Notebooks for tracking **Toxoplasma** in 2D and 3D using various implementations. The project features serial, parallel, and distributed versions, showcasing the flexibility and scalability of the tracking algorithms.
 
